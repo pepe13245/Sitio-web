@@ -1,0 +1,39 @@
+:root {
+    --color-principal: #590208;
+    --color-secundario: #e0e0e0;
+    --color-terciaario: #333333;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+    margin-top: 70vh;
+    background-color: var(--color-principal);
+    position: static;
+    bottom: 1px;
+    color: white;
+
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+
+}
+
+footer .p{
+    font-family: "Oxygen" sans-serif;
+    font-size: 1.5em;
+}
+
+@media(max-width: 500px) {
+    footer {
+        margin-top: 650px;
+    }
+}

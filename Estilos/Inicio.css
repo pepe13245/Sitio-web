@@ -1,0 +1,204 @@
+:root {
+    --color-principal: #590208;
+    --color-secundario: #e0e0e0;
+    --color-terciaario: #333333;
+}
+
+.oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: var(--color-secundario);
+    font-family: "Oxygen" sans-serif;
+}
+
+section .hero_image {
+    background-image: url('/Imagenes/pexels-cdc-library-3992949.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_content {
+    position: relative; 
+    z-index: 1;
+    width: 50%;
+    color: white;
+ 
+}
+
+.hero_content h1{
+    font-size: 40px;
+    font-family: "Bitter", sans-serif;
+}
+
+.information {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.information h1, .information p{
+    margin-bottom: 2%;    
+}
+
+.information p {
+    width: 100%;
+    text-align: center;
+}
+
+.modalidades {
+    width: 100%;
+    height: 250px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 350px;
+    transition-duration: 2s;
+    
+}
+
+.primera-columna {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+.segunda-columna {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.modalidades .multimedia, .musica, .academico, .artes-visuales{
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 2s;
+
+}
+
+.modalidades .animation{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    position: relative;
+    transition-duration: 1.5s;
+
+}
+
+.modalidades .animation:hover{
+    opacity: 1;
+}
+
+.modalidades h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer {
+    position: static;
+    bottom: 0px;
+    margin-top: 100px;
+}
+
+.modalidades img{
+    width: 600px;
+    height: 320px;
+}
+
+.information p{
+    font-family: "Oxygen" sans-serif;
+    font-size: 1.5em;
+}
+
+h1{
+    font-family: "Bitter" sans-serif;
+}
+
+h4  {
+    align-items: center;
+    margin-top: 1px;
+    font-family: "Bitter" sans-serif;
+    font-size: 1.5em;
+}
+
+.modalidades h4 {
+    color: white;
+}
+
+.modalidades a{
+    font-size: 0.7em;
+}
+
+h3{
+    font-family: "Bitter" sans-serif;
+    margin-bottom: 6%;
+}
+ 
+@media (max-width: 1200px) {
+    .modalidades img{
+        width: 400px;
+        height: 250px;
+    }
+
+    .modalidades{
+        margin-top: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .primera-columna, .segunda-columna {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 20px;
+    
+    }
+   
+    
+}
